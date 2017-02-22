@@ -24,10 +24,11 @@ public class Principal
            figura.calculaArea();
        }
        
-       while(it.hasNext())
+       Iterator<Figura> itt = fig.iterator();
+       while(itt.hasNext())
        {
-           Figura figura = it.next();
-           System.out.println(figura.accedeArea());
+           Figura figura = itt.next();
+           System.out.println(figura.dimeInfo());
        }
     }
 }

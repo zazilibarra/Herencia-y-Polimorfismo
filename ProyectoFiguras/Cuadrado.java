@@ -18,4 +18,9 @@ public class Cuadrado extends Figura
     {
         area = lado * lado;
     }
+    
+    public String dimeInfo()
+    {
+        return "Cuadrado : " + super.dimeInfo();
+    }
 }
