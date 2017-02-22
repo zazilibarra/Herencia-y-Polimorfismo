@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Iterator;
 /**
  * Write a description of class Principal here.
  * 
@@ -10,20 +11,23 @@ public class Principal
    public static void main(String [] args)
    {
        ArrayList<Figura> fig = new ArrayList<Figura>();
-
+       
        fig.add(new Triangulo(3, 4));
        fig.add(new Cuadrado(2));
        fig.add(new Circulo(3));
        
-       for(Figura i : fig)
+       Iterator<Figura> it = fig.iterator();
+       
+       while(it.hasNext())
        {
-          i.calculaArea();
+           Figura figura = it.next();
+           figura.calculaArea();
        }
        
-       int n = 1;
-       for(Figura i : fig)
+       while(it.hasNext())
        {
-          System.out. println("Area de figura " + n++ +" : " + i.accedeArea());
+           Figura figura = it.next();
+           System.out.println(figura.accedeArea());
        }
     }
 }
