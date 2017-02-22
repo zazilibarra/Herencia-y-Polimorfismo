@@ -1,4 +1,4 @@
-
+import java.util.ArrayList;
 /**
  * Write a description of class Principal here.
  * 
@@ -9,15 +9,11 @@ public class Principal
 {
    public static void main(String [] args)
    {
-       Figura [] fig = new Figura[3];
-              
-       Triangulo t1 = new Triangulo(3, 4);
-       Cuadrado s1 = new Cuadrado(2);
-       Circulo c1 = new Circulo(3);
-       
-       fig[0] = t1;
-       fig[1] = s1;
-       fig[2] = c1;
+       ArrayList<Figura> fig = new ArrayList<Figura>();
+
+       fig.add(new Triangulo(3, 4));
+       fig.add(new Cuadrado(2));
+       fig.add(new Circulo(3));
        
        for(Figura i : fig)
        {
