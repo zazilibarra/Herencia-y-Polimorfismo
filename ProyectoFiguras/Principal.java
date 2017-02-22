@@ -10,7 +10,7 @@ public class Principal
    public static void main(String [] args)
    {
        Figura [] fig = new Figura[3];
-       
+              
        Triangulo t1 = new Triangulo(3, 4);
        Cuadrado s1 = new Cuadrado(2);
        Circulo c1 = new Circulo(3);
@@ -19,14 +19,15 @@ public class Principal
        fig[1] = s1;
        fig[2] = c1;
        
-       for(int i = 0;  i < fig.length; i++)
+       for(Figura i : fig)
        {
-          fig[i].calculaArea();
+          i.calculaArea();
        }
        
-       for(int i = 0;  i < fig.length; i++)
+       int n = 1;
+       for(Figura i : fig)
        {
-          System.out. println("Area de figura " + (i+1) + ": " + fig[i].accedeArea());
+          System.out. println("Area de figura " + n++ +" : " + i.accedeArea());
        }
     }
 }
