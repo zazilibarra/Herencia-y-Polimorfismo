@@ -28,7 +28,7 @@ public class Principal
        while(itt.hasNext())
        {
            Figura figura = itt.next();
-           System.out.println(figura.dimeInfo());
+           System.out.println(figura);
        }
     }
 }

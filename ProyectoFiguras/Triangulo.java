@@ -21,8 +21,9 @@ public class Triangulo extends Figura
         area = base * altura / 2;
     }
     
-    public String dimeInfo()
+    @Override
+    public String toString()
     {
-        return "Triangulo : " + super.dimeInfo();
+        return "Triangulo : " + super.toString();
     }
 }
