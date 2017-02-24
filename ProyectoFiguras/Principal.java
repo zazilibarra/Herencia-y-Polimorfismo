@@ -10,7 +10,7 @@ public class Principal
 {
    public static void main(String [] args)
    {
-       ArrayList<Figura> fig = new ArrayList<Figura>();
+       /*ArrayList<Figura> fig = new ArrayList<Figura>();
        
        fig.add(new Triangulo(3, 4));
        fig.add(new Cuadrado(2));
@@ -30,5 +30,21 @@ public class Principal
            Figura figura = itt.next();
            System.out.println(figura);
        }
+       
+       
+    }*/
+    
+    Triangulo t1 = new Triangulo(4,5);
+    Circulo c1 = new Circulo(3);
+    Circulo c2 = new Circulo(3);
+    
+    if(c1.equals(t1))
+    {
+        System.out.println("Iguales");
     }
+    else
+    {
+        System.out.println("Diferentes");
+    }
+   }
 }
