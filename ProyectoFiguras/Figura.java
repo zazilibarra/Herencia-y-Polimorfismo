@@ -1,16 +1,15 @@
-/**
- * Write a description of class Figura here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
-public class Figura
+import java.awt.Graphics;
+public abstract class Figura
 {
     protected float area;
+    private int posX;
+    private int posY;
     
-    public Figura()
+    public Figura(int x, int y)
     {
-        area = 0;
+        posX = x;
+        posY = y;
+        //area = 0;
     }
     
     public float accedeArea()
@@ -34,4 +33,16 @@ public class Figura
     {
         return this.area == ((Figura)obj).area;
     }
+    
+    protected int dimeX()
+    {
+        return posX;
+    }
+    
+    protected int dimeY()
+    {
+        return posY;
+    }
+    
+    public abstract void dibuja(Graphics g);
 }

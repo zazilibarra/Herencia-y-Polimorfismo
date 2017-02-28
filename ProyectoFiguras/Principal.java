@@ -10,7 +10,9 @@ public class Principal
 {
    public static void main(String [] args)
    {
-       /*ArrayList<Figura> fig = new ArrayList<Figura>();
+       Ventana vent = new Ventana(800, 600);
+        vent.setVisible(true);
+       ArrayList<Figura> fig = new ArrayList<Figura>();
        
        fig.add(new Triangulo(3, 4));
        fig.add(new Cuadrado(2));
@@ -23,7 +25,7 @@ public class Principal
            Figura figura = it.next();
            figura.calculaArea();
        }
-       
+       /*
        Iterator<Figura> itt = fig.iterator();
        while(itt.hasNext())
        {
@@ -32,7 +34,7 @@ public class Principal
        }
        
        
-    }*/
+    }
     
     Triangulo t1 = new Triangulo(4,5);
     Circulo c1 = new Circulo(3);
@@ -45,6 +47,6 @@ public class Principal
     else
     {
         System.out.println("Diferentes");
-    }
+    }2*/
    }
 }
