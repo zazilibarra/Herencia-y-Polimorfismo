@@ -1,14 +1,17 @@
 import java.awt.Graphics;
+import java.awt.Color;
 public abstract class Figura
 {
     protected float area;
     private int posX;
     private int posY;
+    private Color color;
     
-    public Figura(int x, int y)
+    public Figura(int x, int y, Color col);
     {
         posX = x;
         posY = y;
+        color = col;
         //area = 0;
     }
     
@@ -42,6 +45,11 @@ public abstract class Figura
     protected int dimeY()
     {
         return posY;
+    }
+    
+    public Color dimeColor()
+    {
+        return color;
     }
     
     public abstract void dibuja(Graphics g);

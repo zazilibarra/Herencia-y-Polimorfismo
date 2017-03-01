@@ -21,6 +21,7 @@ public class Cuadrado extends Figura
         return "Cuadrado : " + super.toString();
     }
     
+    @Override
      public void dibuja(Graphics g)
     {
         Graphics2D g2 = (Graphics2D)g;
