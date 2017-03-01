@@ -11,20 +11,7 @@ public class Principal
    public static void main(String [] args)
    {
        Ventana vent = new Ventana(800, 600);
-        vent.setVisible(true);
-       ArrayList<Figura> fig = new ArrayList<Figura>();
-       
-       fig.add(new Triangulo(3, 4));
-       fig.add(new Cuadrado(2));
-       fig.add(new Circulo(3));
-       
-       Iterator<Figura> it = fig.iterator();
-       
-       while(it.hasNext())
-       {
-           Figura figura = it.next();
-           figura.calculaArea();
-       }
+       vent.setVisible(true);
        /*
        Iterator<Figura> itt = fig.iterator();
        while(itt.hasNext())

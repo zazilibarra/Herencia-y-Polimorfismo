@@ -1,16 +1,12 @@
-
-/**
- * Write a description of class Circulo here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
+import java.awt.Graphics;
+import java.awt.Graphics2D;
 public class Circulo extends Figura
 {
     private float radio;
     
-    public Circulo(float r)
+    public Circulo(int x, int y, float r)
     {
+        super(x,y);
         radio = r;
     }
     
@@ -33,8 +29,14 @@ public class Circulo extends Figura
         return this.radio == ((Circulo)obj).radio;
         }
         else
+        {
             return false;
+        }
     }
     
-    
+    public void dibuja(Graphics g)
+    {
+        Graphics2D g2 = (Graphics2D)g;
+        g2.drawOval(super.dimeX(), super.dimeY(), (int)radio, (int)radio);
+    }
 }
