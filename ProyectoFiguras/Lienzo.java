@@ -6,16 +6,17 @@ import java.util.Iterator;
 import java.awt.Color;
 public class Lienzo extends JPanel
 {
+   private ArrayList<Figura> figuras = new ArrayList<Figura>();
    public Lienzo()
-   {
-       ArrayList<Figura> figuras = new ArrayList<Figura>();
-       
-       Color negro = new Color (100,55,200);
-       
-       Triangulo t1 = new Triangulo(50, 300, 100, 80, negro);
-       Circulo c1 = new Circulo(200, 200, 100, negro);
-       Cuadrado s1 = new Cuadrado(350, 200, 100, negro);
-       Rombo r1 = new Rombo(500, 250, 100, 100, negro);
+   {     
+       Color col = new Color (249, 3, 4);
+       Triangulo t1 = new Triangulo(70, 300, 100, 80, col);
+       col = new Color (249, 200, 4);
+       Circulo c1 = new Circulo(240, 200, 100, col);
+       col = new Color (77,21,33);
+       Cuadrado s1 = new Cuadrado(430, 200, 100, col);
+       col = new Color (4, 228, 66);
+       Rombo r1 = new Rombo(600, 250, 100, 100, col);
        
        figuras.add(t1);
        figuras.add(c1);

@@ -7,7 +7,7 @@ public class Circulo extends Figura
     
     public Circulo(int x, int y, float r,  Color color)
     {
-        super(x,y, color);
+        super(x,y,color);
         radio = r;
     }
     
@@ -27,7 +27,7 @@ public class Circulo extends Figura
     {
         if(obj instanceof Circulo)
         {
-        return this.radio == ((Circulo)obj).radio;
+            return this.radio == ((Circulo)obj).radio;
         }
         else
         {
@@ -39,6 +39,9 @@ public class Circulo extends Figura
     public void dibuja(Graphics g)
     {
         Graphics2D g2 = (Graphics2D)g;
+        g2.setColor(Color.black);
         g2.drawOval(super.dimeX(), super.dimeY(), (int)radio, (int)radio);
+        g2.setColor(super.dimeColor());
+        g2.fillOval(super.dimeX(), super.dimeY(), (int)radio, (int)radio);
     }
 }

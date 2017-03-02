@@ -7,11 +7,11 @@ public abstract class Figura
     private int posY;
     private Color color;
     
-    public Figura(int x, int y, Color col);
+    public Figura(int x, int y, Color c)
     {
         posX = x;
         posY = y;
-        color = col;
+        color = c;
         //area = 0;
     }
     

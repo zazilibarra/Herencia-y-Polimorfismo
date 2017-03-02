@@ -1,6 +1,6 @@
 #BlueJ class context
-comment0.params=x\ y\ l
-comment0.target=Cuadrado(int,\ int,\ float)
+comment0.params=x\ y\ l\ color
+comment0.target=Cuadrado(int,\ int,\ float,\ java.awt.Color)
 comment1.params=
 comment1.target=void\ calculaArea()
 comment2.params=
