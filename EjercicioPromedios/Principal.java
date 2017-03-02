@@ -12,6 +12,18 @@ public class Principal
        banco.añadeCuenta(cb2);
        banco.añadeCuenta(cb3);
        
-       System.out.println("El promedio de los saldos de cuentas bancarias es: " + banco.calculaSaldo() );
+       System.out.println("Saldos Promedio: " + banco.calculaSaldo() );
+       
+       Planeta planeta = new Planeta();
+       
+       Pais p1 = new Pais(25);
+       Pais p2 = new Pais(32);
+       Pais p3 = new Pais(94);
+       
+       planeta.añadePais(p1);
+       planeta.añadePais(p2);
+       planeta.añadePais(p3);
+       
+        System.out.println("Promedio de habitantes: " + planeta.calculaPromHabitantes() );
    }
 }
