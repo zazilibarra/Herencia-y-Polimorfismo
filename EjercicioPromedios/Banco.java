@@ -14,5 +14,10 @@ public class Banco
         cuentas.add(cb);
     }
     
-    //public float calculaPromedio()
+    public float calculaPromedio()
+    {
+        CuentaBancaria[] arrCuentas = new CuentaBancaria[cuentas.size()];
+        arrCuentas = cuentas.toArray(arrCuentas);
+        return Utileria.calculaPromedio(arrCuentas);
+    }   
 }

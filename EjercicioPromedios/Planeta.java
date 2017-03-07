@@ -13,5 +13,10 @@ public class Planeta
         paises.add(p);
     }
     
-    //public float calculaPromHabitantes()
+    public float calculaPromHabitantes()
+    {
+        Pais[] arrPaises = new Pais[paises.size()];
+        arrPaises = paises.toArray(arrPaises);
+        return Utileria.calculaPromedio(arrPaises);
+    }
 }

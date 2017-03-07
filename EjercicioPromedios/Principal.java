@@ -2,7 +2,7 @@ public class Principal
 {
    public static void main(String [] args)
    {
-       Medible[] cuentas = new Medible[3];
+       Banco cuentas = new Banco();
        
        CuentaBancaria cb1 = new CuentaBancaria(100);
        CuentaBancaria cb2 = new CuentaBancaria(200);
@@ -12,10 +12,9 @@ public class Principal
        cuentas.añadeCuenta(cb2);
        cuentas.añadeCuenta(cb3);
        
-       float prom = 
-       System.out.println("Saldos Promedio: " + banco.calculaSaldo() );
+       System.out.println("Saldos Promedio: " + .calculaSaldo() );
        
-       Medible[] paises = new Medible[3];
+       Planeta[] paises = new Banco[3];
        
        Pais p1 = new Pais(25);
        Pais p2 = new Pais(32);
@@ -25,6 +24,6 @@ public class Principal
        paises.añadePais(p2);
        paises.añadePais(p3);
        
-        //System.out.println("Promedio de habitantes: " + planeta.calculaPromHabitantes() );*/
+        System.out.println("Promedio de habitantes: " + planeta.calculaPromHabitantes() );
    }
 }
