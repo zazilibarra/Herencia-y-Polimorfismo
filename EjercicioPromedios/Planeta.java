@@ -13,17 +13,5 @@ public class Planeta
         paises.add(p);
     }
     
-    public float calculaPromHabitantes()
-    {
-        float habitantes = 0;
-        Iterator<Pais> it = paises.iterator();
-       
-        while(it.hasNext())
-         {
-             Pais pais = it.next();
-             habitantes += (float)pais.dimeHabitantes();
-         }
-        
-         return habitantes/paises.size();
-    }
+    //public float calculaPromHabitantes()
 }

@@ -1,5 +1,5 @@
 
-public class Pais
+public class Pais implements Medible
 {
     private int habitantes;
     
@@ -8,7 +8,7 @@ public class Pais
         habitantes = h;
     }
     
-    public int dimeHabitantes()
+    public int obtenerMedida()
     {
         return habitantes;
     }
