@@ -7,21 +7,23 @@ public class Lienzo extends JPanel
 {
     private Pelota pelota;
     
+    public Lienzo()
+    {
+        pelota = new Pelota(100, 100, 15);
+        EscuchadorTiempo escuchaTiempo = new EscuchadorTiempo();
+        Timer tiempo = new Timer(10, escuchaTiempo);
+        tiempo.start();
+    }
+    
      class EscuchadorTiempo implements ActionListener
     {
         @Override
         public void actionPerformed(ActionEvent e)
         {
-            System.out.println("Hola Pelota");
+            //System.out.println("Hola Pelota");
+            pelota.muevete(getBounds());
+            repaint();
         }
-    }
-    
-    public Lienzo()
-    {
-        pelota = new Pelota(100, 100, 10);
-        EscuchadorTiempo escuchaTiempo = new EscuchadorTiempo();
-        Timer tiempo = new Timer(1000, escuchaTiempo);
-        tiempo.start();
     }
    
     @Override
