@@ -22,7 +22,7 @@ public class Ventana extends JFrame
         this.addKeyListener(escuchadorTeclado);
         
         EscuchadorTiempo escuchaTiempo = new EscuchadorTiempo();
-        tiempo = new Timer(1, escuchaTiempo);
+        tiempo = new Timer(10, escuchaTiempo);
         tiempo.start();
     }  
     
